@@ -58,9 +58,9 @@ namespace DBot
         public static RestClient client = new RestClient("https://discordapp.com/api/v6/");
 
         //TEST
-        public static string InviteID = "jFVTbzT5WA";
-        public static string ChannelID = "821561138616598560"; //
-        public static string GuildID = "821561138155618305";
+        public static string InviteID = "mAHnRRCwxz";
+        public static string ChannelID = "814124580644847626"; //
+        public static string GuildID = "814124339456770079";
 
         public static bool UseDefaultProxy = false;
 
