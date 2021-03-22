@@ -534,7 +534,7 @@ namespace DBot
                     Console.WriteLine();
 
                     //SEND NEW CODE
-                    /*if (accountVerified)
+                    if (accountVerified)
                     {
                         Console.WriteLine($"- Requesting new verify email");
                         var request = new RestRequest($"auth/verify/resend");
@@ -628,7 +628,7 @@ namespace DBot
 
                     Console.WriteLine("No valid e-mail.. Delay 5s");
                     await Task.Delay(5000);
-                    continue;*/
+                    continue;
 
                     Console.WriteLine("- Manual confirm.. Press ENTER when done");
                     Console.ReadLine();
@@ -637,9 +637,10 @@ namespace DBot
                 catch (Exception e)
                 {
                     Console.WriteLine($"- ERROR (VERIFY BLOCK): {e.Message}");
-                    Console.WriteLine("Press ENTER to restart the block");
+
+                    Console.WriteLine("- Manual confirm.. Press ENTER when done");
                     Console.ReadLine();
-                    continue;
+                    break;
                 }
             }
         }
